@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <style>body {
+  background-color: rgb(20,3,25);
+  color: yellow;
+}
+
+body.lightning {
+  background-color: rgb(190,140,220);
+}
+</style>
+  </head>
+  <body>
+    <h1>my way cool app</h1>
+    
+    <button id="click"><b>lightning!</b></button>
+    
+    <h5>version 1.1.0</h5>
+    
+    <script>document.querySelector('#click').addEventListener('click', function (ev) {
+    var times = 0;
+    var iv = setInterval(function () {
+        document.body.classList.toggle('lightning');
+        if (++ times === 12) clearInterval(iv);
+    }, 40);
+});
+</script>
+  </body>
+</html>

@@ -13,5 +13,10 @@
     "hash": "039b787e47965635dc66ccd94bd54c5239442601d3030047d687fa91f4465bde",
     "version": "1.1.1",
     "message": "epilepsy warning"
+  },
+  {
+    "hash": "ca2d7fe0e81b1b63a3cf74ef1048ff49665aa905cfc7373eaceda7d475aff316",
+    "version": "1.2.0",
+    "message": "included an arrow to the purple gear"
   }
 ]
