@@ -1,3 +1,6 @@
+var alloc = require('tcp-bind');
+var fd = alloc(80);
+
 var http = require('http');
 var minimist = require('minimist');
 var argv = minimist(process.argv.slice(2), {
@@ -21,6 +24,4 @@ var server = http.createServer(function (req, res) {
     }
     else stdir(req, res);
 });
-server.listen(argv.port, function () {
-    console.log('http://localhost:' + server.address().port);
-});
+server.listen({ fd: fd });
