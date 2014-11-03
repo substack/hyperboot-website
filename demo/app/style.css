@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(70,20,80);
+  color: yellow;
+}
+
+body.lightning {
+  background-color: rgb(190,140,220);
+}

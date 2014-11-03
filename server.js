@@ -9,7 +9,7 @@ var stdir = ecstatic(__dirname + '/static');
 
 var hyperboot = require('hyperboot');
 var boot = hyperboot({
-    dir: __dirname,
+    dir: __dirname + '/demo',
     name: 'hyperboot demo'
 });
 
