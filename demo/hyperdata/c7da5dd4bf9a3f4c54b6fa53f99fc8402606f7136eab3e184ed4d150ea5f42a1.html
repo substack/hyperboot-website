@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>body {
+  background-color: rgb(20,3,25);
+  color: yellow;
+}
+
+body.lightning {
+  background-color: rgb(190,140,220);
+}
+
+.warning {
+  color: rgb(250,180,100);
+}
+
+.pointer {
+  color: pink;
+  position: absolute;
+  right: 40px;
+  top: -8px;
+  font-size: 1em;
+}
+</style>
+  </head>
+  <body>
+    <h1>my way cool app</h1>
+    <h3 class="pointer">
+      click the faint purple gear at the top right to see the versions available
+      ——&gt;
+    </h3>
+    
+    <button id="click"><b>lightning!</b></button>
+    <h3 class="warning">
+      WARNING: the background will flash rapidly! If you are at risk of
+      epilepsy from flashing lights, do not click!
+    </h3>
+    
+    <p>Try loading this page offline!</p>
+    
+    <h5>version 1.2.1</h5>
+    
+    <script>document.querySelector('#click').addEventListener('click', function (ev) {
+    var times = 0;
+    var iv = setInterval(function () {
+        document.body.classList.toggle('lightning');
+        if (++ times === 12) clearInterval(iv);
+    }, 40);
+});
+</script>
+  </body>
+</html>

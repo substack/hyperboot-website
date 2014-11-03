@@ -18,5 +18,10 @@
     "hash": "ca2d7fe0e81b1b63a3cf74ef1048ff49665aa905cfc7373eaceda7d475aff316",
     "version": "1.2.0",
     "message": "included an arrow to the purple gear"
+  },
+  {
+    "hash": "c7da5dd4bf9a3f4c54b6fa53f99fc8402606f7136eab3e184ed4d150ea5f42a1",
+    "version": "1.2.1",
+    "message": "try it offline!"
   }
 ]
