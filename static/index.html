@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="page">
+    <h1>hyperboot</h1>
+    <p>
+      hyperboot is a webapp bootloader that puts users in control
+    </p>
+    <ul>
+      <li>
+        <b>offline</b> - once you've loaded an app, you have it cached locally
+        forever. If you're on poor internet or no internet at all, the app will
+        continue to function, at least in part.
+      </li>
+      <li>
+        <b>security</b> - versions are immutable and cached permanently in the user's
+        browser. Once the initial payload has been verified, update hashes can be
+        audited out of band through trusted channels. This mitigates a huge
+        problem with browser cryptography: the website hosting the html can change
+        at any time without warning.
+      </li>
+      <li>
+        <b>empowerment</b> - users are protected against a service that disappears
+        without warning or starts adding user-hostile features. Apps can be
+        trivially copied to the local disk or to another server.
+      </li>
+      <li>
+        <b>censorship-resistant</b> - once you've loaded an app, you have that app
+        permanently stored in your browser. If the server hosting that application
+        is forced to shut down, you still have the content. The more that apps use
+        peer to peer technology such as WebRTC, the harder it will be to shut down
+        the free flow of information.
+      </li>
+    </ul>
+    
+    <div class="link">
+      <a href="http://demo.hyperboot.org">view the demo</a>
+    </div>
+    <div class="link">
+      <a href="https://github.com/substack/hyperboot">source code on github</a>
+    </div>
+  </div>
+</body>
+</html>

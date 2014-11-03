@@ -1,0 +1,13 @@
+#page {
+  margin: auto;
+  width: 800px;
+  font-family: sans-serif;
+}
+
+ul li {
+  margin-bottom: 1em;
+}
+
+.link {
+  margin-bottom: 1em;
+}
