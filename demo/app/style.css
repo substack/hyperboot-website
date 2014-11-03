@@ -6,3 +6,7 @@ body {
 body.lightning {
   background-color: rgb(190,140,220);
 }
+
+.warning {
+  color: rgb(250,180,100);
+}

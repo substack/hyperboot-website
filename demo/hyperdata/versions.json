@@ -3,5 +3,10 @@
     "hash": "36db96e8af0e357cf69f223a15768ab870ad65ddb198d7c272559a9c927a0fa9",
     "version": "1.0.0",
     "message": "First release! When you click the button, lightning flashes."
+  },
+  {
+    "hash": "b75264a374e497aea351f4efe463b43fdf5d5f682b4a105df124f6d11397d96d",
+    "version": "1.1.0",
+    "message": "faster lightning, darker background"
   }
 ]
