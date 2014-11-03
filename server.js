@@ -1,6 +1,9 @@
 var alloc = require('tcp-bind');
 var fd = alloc(80);
 
+process.setgid(process.argv[2]);
+process.setuid(process.argv[2]);
+
 var http = require('http');
 var minimist = require('minimist');
 var argv = minimist(process.argv.slice(2), {
