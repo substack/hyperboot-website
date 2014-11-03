@@ -1,0 +1,25 @@
+{
+  "name": "hyperboot-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "hyperboot website",
+  "dependencies": {
+    "ecstatic": "~0.5.5",
+    "hyperboot": "~1.0.1",
+    "minimist": "~1.1.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/hyperboot-website.git"
+  },
+  "homepage": "https://github.com/substack/hyperboot-website",
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}

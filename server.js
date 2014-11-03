@@ -10,8 +10,7 @@ var stdir = ecstatic(__dirname + '/static');
 var hyperboot = require('hyperboot');
 var boot = hyperboot({
     dir: __dirname + '/demo/hyperdata',
-    name: 'hyperboot demo',
-    dev: true
+    name: 'hyperboot demo'
 });
 
 var server = http.createServer(function (req, res) {
