@@ -1,7 +1,13 @@
 # demo app
 
-To make a release, do:
+To make a release, first install hyperboot and html-inline:
 
 ```
-html-inline app/index.html | hyperboot release -v 1.2.3 -m 'release notes...'
+$ npm install hyperboot html-inline -g
+```
+
+then do:
+
+```
+$ html-inline app/index.html | hyperboot release -v 1.2.3 -m 'release notes...'
 ```
