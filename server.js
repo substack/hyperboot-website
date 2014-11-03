@@ -21,4 +21,6 @@ var server = http.createServer(function (req, res) {
     }
     else stdir(req, res);
 });
-server.listen(argv.port);
+server.listen(argv.port, function () {
+    console.log('http://localhost:' + server.address().port);
+});

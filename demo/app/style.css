@@ -10,3 +10,11 @@ body.lightning {
 .warning {
   color: rgb(250,180,100);
 }
+
+.pointer {
+  color: pink;
+  position: absolute;
+  right: 40px;
+  top: -8px;
+  font-size: 1em;
+}
