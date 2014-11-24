@@ -38,5 +38,10 @@
     "boot": true,
     "hash": "b79d4c3c7eb29d1c7878b2a965702b93418c8c4670006f1aad020fabfe881f79",
     "version": "2.0.0"
+  },
+  {
+    "boot": true,
+    "hash": "5e6ecaba0bb9ff1aad0cc41e498c051b2a46751d0cf6794fe90a107305418b86",
+    "version": "2.0.3"
   }
 ]
