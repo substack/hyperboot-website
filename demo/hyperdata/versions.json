@@ -23,5 +23,20 @@
     "hash": "c7da5dd4bf9a3f4c54b6fa53f99fc8402606f7136eab3e184ed4d150ea5f42a1",
     "version": "1.2.1",
     "message": "try it offline!"
+  },
+  {
+    "hash": "3ac5f0be52a7afb8cf0f84dda56715d720068ccf229102f6f991cad4265fd323",
+    "version": "2.0.0",
+    "message": "configuration button"
+  },
+  {
+    "boot": true,
+    "hash": "f9c699c8a7a948c01318930f2fa63a3d32396f6b6b793df733df34ac50c04768",
+    "version": "2.0.1"
+  },
+  {
+    "boot": true,
+    "hash": "b79d4c3c7eb29d1c7878b2a965702b93418c8c4670006f1aad020fabfe881f79",
+    "version": "2.0.0"
   }
 ]
