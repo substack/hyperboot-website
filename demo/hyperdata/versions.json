@@ -31,16 +31,6 @@
   },
   {
     "boot": true,
-    "hash": "f9c699c8a7a948c01318930f2fa63a3d32396f6b6b793df733df34ac50c04768",
-    "version": "2.0.1"
-  },
-  {
-    "boot": true,
-    "hash": "b79d4c3c7eb29d1c7878b2a965702b93418c8c4670006f1aad020fabfe881f79",
-    "version": "2.0.0"
-  },
-  {
-    "boot": true,
     "hash": "5e6ecaba0bb9ff1aad0cc41e498c051b2a46751d0cf6794fe90a107305418b86",
     "version": "2.0.3"
   }
