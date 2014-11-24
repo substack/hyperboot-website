@@ -31,12 +31,12 @@
   },
   {
     "boot": true,
-    "hash": "5e6ecaba0bb9ff1aad0cc41e498c051b2a46751d0cf6794fe90a107305418b86",
-    "version": "2.0.3"
+    "hash": "c090b75793641488494a4dd13205e1816bef3228bf5ffccb0f46bcd37e1a9ef2",
+    "version": "2.0.5"
   },
   {
     "boot": true,
-    "hash": "e25031a31d2c3a832e9d3797b422229ecb36680195b0379d687a2ed3452d51e8",
-    "version": "2.0.4"
+    "hash": "d7de82704ef3eb07404404f98c3851a3c6966f6eee67c186d2c89982af8b69f8",
+    "version": "2.0.6"
   }
 ]
