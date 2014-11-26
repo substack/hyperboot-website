@@ -14,17 +14,37 @@ var ecstatic = require('ecstatic');
 var stdir = ecstatic(__dirname + '/static');
 
 var hyperboot = require('hyperboot');
-var boot = hyperboot({
-    dir: __dirname + '/demo/hyperdata',
-    name: 'hyperboot demo'
-});
+var boots = {
+    demo: hyperboot({
+        dir: __dirname + '/demo/hyperdata',
+        name: 'hyperboot demo'
+    }),
+    keyboot: hyperboot({
+        dir: __dirname + '/../keyboot/hyperdata',
+        name: 'keyboot'
+    }),
+    'keyboot-example-app': hyperboot({
+        dir: __dirname + '/../keyboot-example-app/hyperdata',
+        name: 'keyboot example app'
+    })
+};
 
 var server = http.createServer(function (req, res) {
     if (/^demo\d*(?:\.|$)/.test(req.headers.host)) {
-        if (boot.exec(req, res)) return;
+        serve('demo');
+    }
+    else if (/^keyboot(?:\.|$)/.test(req.headers.host)) {
+        serve('keyboot');
+    }
+    else if (/^keyboot-example-app(?:\.|$)/.test(req.headers.host)) {
+        serve('keyboot-example-app');
+    }
+    else stdir(req, res);
+    
+    function serve (name) {
+        if (boots[name].exec(req, res)) return;
         res.statusCode = 404;
         res.end('not found\n');
     }
-    else stdir(req, res);
 });
 server.listen({ fd: fd });
