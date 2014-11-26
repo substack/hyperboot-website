@@ -24,7 +24,7 @@ var boots = {
         name: 'keyboot'
     }),
     'keyboot-example-app': hyperboot({
-        dir: __dirname + '/../keyboot-example-app/hyperdata',
+        dir: __dirname + '/../keyboot-example-app-website/hyperdata',
         name: 'keyboot example app'
     })
 };
