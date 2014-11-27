@@ -6,6 +6,7 @@ process.setgid(process.argv[2]);
 process.setuid(process.argv[2]);
 
 var http = require('http');
+var https = require('https');
 var minimist = require('minimist');
 var argv = minimist(process.argv.slice(2), {
     alias: { p: 'port' }
@@ -56,7 +57,7 @@ var server = http.createServer(function (req, res) {
 });
 server.listen({ fd: fd });
 
-var kserver = https.createServer(function (req, res) {
+var kserver = https.createServer({ pfx: kpfx }, function (req, res) {
     if (/^keyboot(?:\.|$)/.test(req.headers.host)) {
         serve('keyboot');
     }
@@ -71,4 +72,4 @@ var kserver = https.createServer(function (req, res) {
         res.end('not found\n');
     }
 });
-kserver.listen({ fd: kfd, pfx: kpfx });
+kserver.listen({ fd: kfd });
