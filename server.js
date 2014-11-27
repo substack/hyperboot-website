@@ -43,6 +43,7 @@ var server = http.createServer(function (req, res) {
     else if (/^keyboot(?:\.|$)/.test(req.headers.host)) {
         res.statusCode = 301;
         res.setHeader('location', 'https://keyboot.org');
+        res.end('moved permanently: https://keyboot.org');
     }
     else if (/^keyboot-example-app(?:\.|$)/.test(req.headers.host)) {
         serve('keyboot-example-app');
